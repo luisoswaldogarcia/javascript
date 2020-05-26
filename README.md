@@ -14,7 +14,13 @@ var [ lunes, martes, domingo ] = dias_semana;
 
 ## setTimeout
 
+### Visto
+
 ## let, const y var
+
+### Visto
+
+## Propiedades de objetos
 
 ## this
 
