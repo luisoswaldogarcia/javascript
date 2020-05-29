@@ -1,28 +1,18 @@
-function acumulador(desde){
-    let acumulador = 0;
+const personas = [{
+    nombre: "Juana",
+    edad: 20,
+    genero: 1
+},{
+    nombre: "Pedro",
+    edad: 18,
+    genero: 2
+}];
 
-    if(this[desde]){
-        return this[desde];
-    }
+let edades = personas.map(function(elemento_actual){
+    return elemento_actual.edad;
+});
 
-    for(let i=desde; i>0; i--){
-        acumulador = acumulador + i;
-    }
+console.log("personas: ", personas);
+console.log("edades: ", edades);
 
-    this[desde] = acumulador;
 
-    return acumulador;
-}
-
-console.log("acumulado: ", acumulador(2 * 1000 * 1000 * 1000));
-
-console.log("acumulado: ", acumulador(2 * 1000 * 1000 * 1000));
-console.log("acumulado: ", acumulador(2 * 1000 * 1000 * 1000));
-console.log("acumulado: ", acumulador(2 * 1000 * 1000 * 1000));
-console.log("acumulado: ", acumulador(2 * 1000 * 1000 * 1000));
-console.log("acumulado: ", acumulador(2 * 1000 * 1000 * 1000));
-console.log("acumulado: ", acumulador(2 * 1000 * 1000 * 1000));
-
-console.log("acumulado: ", acumulador(10));
-
-console.log("acumulado: ", acumulador(50));

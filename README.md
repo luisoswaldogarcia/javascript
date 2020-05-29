@@ -24,13 +24,17 @@ var [ lunes, martes, domingo ] = dias_semana;
 
 ## this
 
-## forEach repaso
+## forEach
 
 ## find 
+
+## filter
 
 ## map
 
 ## reduce
+
+## arrow functions
 
 ## try catch finally
 
