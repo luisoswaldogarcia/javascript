@@ -39,3 +39,26 @@ let Pasantes = alumnos.filter(function(ya_pasaron){
 
 )};
 console.log("ya_pasaron", ya_pasaron);
+const promedios = alumnos.map(function(alumno){
+    return alumno.promedio;
+});
+
+const promedio_mas_alto = Math.max(...promedios);
+
+const persona_con_promedio_mas_alto = alumnos.find(function(alumno){
+    return alumno.promedio == promedio_mas_alto;
+});
+
+console.log("persona_con_promedio_mas_alto: ", persona_con_promedio_mas_alto);
+
+const pasaron = alumnos.filter(function(alumno){
+    return alumno.promedio > 5;
+});
+
+console.log("pasaron: ", pasaron);
+
+const reprobaron = alumnos.filter(function(alumno){
+    return alumno.promedio < 6;
+});
+
+console.log("reprobaron: ",reprobaron);
