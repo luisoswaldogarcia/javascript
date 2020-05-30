@@ -54,3 +54,8 @@ const ventas = [{
         cantidad: 3
     }]
 }];
+
+/**
+ * 
+ * Ponerle los importes a las partidas
+ */
