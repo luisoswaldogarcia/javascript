@@ -27,3 +27,15 @@ const alumnos = [{
  * 2. ¿Quienes pasaron?
  * 3. ¿Quienes reprobaron?
  */
+
+ 
+let Promedio_Alto = alumnos.filter(function(elemento_actual){
+    return elemento_actual.promedio == 10 && elemento_actual.nombre.includes("Brenda")
+});
+console.log("Promedio_Alto: ", Promedio_Alto);
+
+let Pasantes = alumnos.filter(function(ya_pasaron){
+    return ya_pasaron.promedio > 6 ;
+
+)};
+console.log("ya_pasaron", ya_pasaron);
