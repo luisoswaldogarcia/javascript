@@ -7,18 +7,18 @@ const ventas = [{
         descripcion: "Horchata",
         precio_unitario: 15,
         cantidad: 2
-    },{
+    }, {
         _id: 1,
         descripcion: "Limón",
         precio_unitario: 20,
         cantidad: 1
-    },{
+    }, {
         _id: 3,
         descripcion: "Jamaica",
         precio_unitario: 12,
         cantidad: 3
     }]
-},{
+}, {
     _id: 1,
     _cliente_id: 2,
     _cliente: "Azucena",
@@ -27,13 +27,13 @@ const ventas = [{
         descripcion: "Limón",
         precio_unitario: 20,
         cantidad: 5
-    },{
+    }, {
         _id: 3,
         descripcion: "Jamaica",
         precio_unitario: 12,
         cantidad: 2
     }]
-},{
+}, {
     _id: 3,
     _cliente_id: 11,
     _cliente: "Jacinta",
@@ -42,12 +42,12 @@ const ventas = [{
         descripcion: "Limón",
         precio_unitario: 20,
         cantidad: 5
-    },{
+    }, {
         _id: 0,
         descripcion: "Horchata",
         precio_unitario: 15,
         cantidad: 2
-    },{
+    }, {
         _id: 4,
         descripcion: "Fresa",
         precio_unitario: 8,
@@ -59,3 +59,9 @@ const ventas = [{
  * 
  * Ponerle los importes a las partidas
  */
+
+const articulo = ventas.map(function(articulo) {
+    return articulo.articulos.cantidad;
+});
+
+console.log("los importes son", articulo);
