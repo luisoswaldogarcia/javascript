@@ -44,14 +44,13 @@ const personas = [{
  * 2. Todos los RFCS
  */
 
-const nombres = personas.map(function(nombres) {
-    return nombre = nombres.nombre + ' ' + nombres.apellido;
+const nombres = personas.map(function(persona) {
+    let nuevo_objeto_clonado = Object.assign({}, persona);
+
+    nuevo_objeto_clonado.nombre_completo = persona.nombre + ' ' + persona.apellido;
+    nuevo_objeto_clonado.RFC = persona.iniciales + persona.fecha_nacimiento.anio.substring(2, 4) + persona.fecha_nacimiento.mes + persona.fecha_nacimiento.dia;
+
+    return nuevo_objeto_clonado;
 });
 
-console.log(nombres);
-
-const fecha = personas.map(function(fecha) {
-    return fecha.iniciales + fecha.fecha_nacimiento.anio.substring(2, 4) + fecha.fecha_nacimiento.mes + fecha.fecha_nacimiento.dia;
-});
-
-console.log(fecha);
+console.log("nombres: ", nombres);
