@@ -7,7 +7,7 @@ const personas = [{
         mes: "02",
         dia: "01"
     }
-},{
+}, {
     nombre: "Enrique",
     apellido: "Arellanes",
     iniciales: "ATLE",
@@ -16,7 +16,7 @@ const personas = [{
         mes: "04",
         dia: "10"
     }
-},{
+}, {
     nombre: "Juan",
     apellido: "Perez",
     iniciales: "PEPJ",
@@ -25,7 +25,7 @@ const personas = [{
         mes: "04",
         dia: "08"
     }
-},{
+}, {
     nombre: "Roberto",
     apellido: "Gomez",
     iniciales: "GOBR",
@@ -40,6 +40,17 @@ const personas = [{
 
 /**
  * 
- * 1. Nombres completos
+ * 1. Agregar un campo nuevo al objeto con los nombres completos
  * 2. Todos los RFCS
  */
+
+const nombres = personas.map(function (persona) {
+    let nuevo_objeto_clonado = Object.assign({},persona);
+    
+    nuevo_objeto_clonado.nombre_completo = persona.nombre + ' ' + persona.apellido;
+    
+    nuevo_objeto_clonado.RFC = persona.fecha_nacimiento.anio.substring(2,4);//
+    return nuevo_objeto_clonado;
+});
+
+console.log("nombres: ", nombres);
