@@ -88,4 +88,5 @@ const ventas = [{
  /**
   * 
   * Agregar indice a cada partida dependiendo del indice que genera el foreach o map
+  * Tarea dos leer JSON.stringify y JSON.parse
   */
