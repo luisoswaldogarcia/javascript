@@ -43,3 +43,24 @@ const personas = [{
  * 1. Nombres completos
  * 2. Todos los RFCS
  */
+
+const nombre_completo = personas.map(function(Nombres){
+  return Nombres.nombre;
+});
+
+//console.log("nombre_completo ", nombre_completo);
+
+const Apellido_completo = personas.map(function(apellidos){
+    return apellidos.apellido + nombre_completo;
+    
+});
+
+
+//const todo = nombre_completo.concat(Apellido_completo);
+
+console.log("Apellido_completo",Apellido_completo);
+//return nombre + " puntaje " + (num1 + num2); 
+//console.log("Apellido_completo", Apellido_completo + "apellido"+ nombre_completo + "nombre");
+
+
+

@@ -29,7 +29,7 @@ const alumnos = [{
  */
 
  
-let Promedio_Alto = alumnos.filter(function(elemento_actual){
+/**let Promedio_Alto = alumnos.filter(function(elemento_actual){
     return elemento_actual.promedio == 10 && elemento_actual.nombre.includes("Brenda")
 });
 console.log("Promedio_Alto: ", Promedio_Alto);
@@ -41,7 +41,8 @@ let Pasantes = alumnos.filter(function(ya_pasaron){
 console.log("ya_pasaron", ya_pasaron);
 const promedios = alumnos.map(function(alumno){
     return alumno.promedio;
-});
+});*/
+/////////////////////////////////////////////////////////
 
 const promedio_mas_alto = Math.max(...promedios);
 

@@ -18,8 +18,9 @@ const personas = [{
     edad: 20
 },{
     nombre: "Pedro",
-    edad: 18
+    edad: 50
 }];
+
 let mayores_50 = personas.filter(function(elemento_actual){
     return elemento_actual.edad > 50;
 });
