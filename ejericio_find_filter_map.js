@@ -42,7 +42,7 @@ const personas = [{
  * 
  * 1. Nombres completos
  * 2. Todos los RFCS
- */
+ 
 
 const nombre_completo = personas.map(function(Nombres){
   return Nombres.nombre;
@@ -62,5 +62,17 @@ console.log("Apellido_completo",Apellido_completo);
 //return nombre + " puntaje " + (num1 + num2); 
 //console.log("Apellido_completo", Apellido_completo + "apellido"+ nombre_completo + "nombre");
 
+
+*/
+
+const nombres = personas.map(function (persona) {
+    let nuevo_objeto_clonado = Object.assign({},persona);
+    
+    nuevo_objeto_clonado.nombre_completo = persona.nombre + ' ' + persona.apellido + '' + personas.iniciales ;
+    
+    return nuevo_objeto_clonado;
+});
+
+console.log("nombres: ", nombres);
 
 
