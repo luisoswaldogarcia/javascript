@@ -38,6 +38,8 @@ var [ lunes, martes, domingo ] = dias_semana;
 
 ## try catch finally
 
+## repasar map
+
 ## promesas
 
 ## funciones asincronas

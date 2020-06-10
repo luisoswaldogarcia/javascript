@@ -59,3 +59,34 @@ const ventas = [{
  * 
  * Ponerle los importes a las partidas
  */
+
+ const importes = ventas.map(function(venta){
+     let partidas = venta.articulos.map(function(partida){
+         return {
+             ...partida,
+             importe: partida.cantidad * partida.precio_unitario
+         }
+     });
+     return {
+         ...venta,
+         articulos: partidas
+     }
+ });
+
+ const importes_facil = ventas.map(function(venta){
+    let nuevo_objeto = Object.assign({}, venta);
+    nuevo_objeto.articulos.forEach(function(articulo){
+        articulo.importe = articulo.cantidad * articulo.precio_unitario;
+    });
+    return nuevo_objeto;
+});
+
+ console.log("importes: ", JSON.stringify(importes));
+ console.log("importes_facil: ", JSON.stringify(importes_facil));
+
+
+ /**
+  * 
+  * Agregar indice a cada partida dependiendo del indice que genera el foreach o map
+  * Tarea dos leer JSON.stringify y JSON.parse
+  */
