@@ -1,3 +1,4 @@
+/*
 const numeros = [0,1,2,3];
 
 const numeros_por_dos = numeros.map(function(elemento_actual){
@@ -17,9 +18,10 @@ const igual = numeros.map(function(elemento_actual){
 
 console.log("numeros: ", numeros);
 console.log("igual: ", igual);
+*/
 
 // ========================================================
-
+/*
 const personas = [{
     nombre: "Juana",
     edad: 20,
@@ -44,7 +46,7 @@ let nuevo = personas.map(function(elemento_actual){
 
 console.log("personas: ", personas);
 console.log("nuevo: ", nuevo);
-
+*/
 // ===========================================
 
 const personas = [{

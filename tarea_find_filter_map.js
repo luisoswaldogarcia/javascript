@@ -26,7 +26,7 @@ const alumnos = [{
  * 1. ¿Quién saco el promedio mas alto?
  * 2. ¿Quienes pasaron?
  * 3. ¿Quienes reprobaron?
- */
+ 
 
 const promedios = alumnos.map(function(alumno){
     return alumno.promedio;
@@ -51,3 +51,22 @@ const reprobaron = alumnos.filter(function(alumno){
 });
 
 console.log("reprobaron: ",reprobaron);
+
+
+
+var promedio=alumnos.map(function(Spromedio){
+return Spromedio.promedio;
+
+});
+*/
+
+//console.log("promedio",promedio);
+
+const promedio= alumnos.reduce(function (acumulador, actual) {
+    return acumulador + actual.promedio;
+}, 0) / alumnos.length;
+
+console.log("promedio: ", promedio);
+
+
+
